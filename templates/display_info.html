@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Helvetica;
+        }
+        body{
+            margin:0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+        }
+        .info{
+            margin-top:30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 450px;
+            height: fit-content;
+            border:2px solid black;
+            border-radius: 5px;
+        }
+        .info-row{
+            margin:10px;
+            display:flex;
+            width:100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h1{
+            margin-left:10px;
+            font-size: x-large;
+            font-weight: 300;
+        }
+        p{
+            font-size: large;
+            font-weight: 200;
+            margin-right:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <div class="info-row">
+            <h1>Name:</h1>
+            <p>{{first_name}} {{last_name}}</p>
+        </div>
+        <div class="info-row">
+            <h1>Email:</h1>
+            <p>{{email}}</p>
+        </div>
+        <div class="info-row">
+            <h1>Newsletter:</h1>
+            <p>{{newsletter}}</p>
+        </div>
+        <div class="info-row">
+            <h1>Address:</h1>
+            <p>{{address}}, {{city}}, {{state}} {{zip_code}}</p>
+        </div>
+    </div>
+</body>
+</html>
